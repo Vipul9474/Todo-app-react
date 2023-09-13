@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam&family=Kaushan+Script&family=Roboto+Mono:ital,wght@1,300&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam&family=Kaushan+Script&display=swap");
+@import url("https://css.gg/css");
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam&family=Kaushan+Script&family=Sriracha&display=swap");
+
+body {
+    margin:0;
+    padding:0;
+  }
+.gg-add{
+    color:rgb(96, 94, 94);
+}
+.gg-add:hover{
+    color:rgb(146, 111, 249);
+}
+input::placeholder{
+    font-size: 14px;
+    position: relative;
+    left: 10px;
+}
+input:active{
+    border:0px solid white;
+}
+input:hover{
+    border:0px solid white;
+}
+.gg-remove:hover{
+    color:rgba(7, 9, 115, 0.6);
+}
+.calendar{
+    margin:.25em 10px 10px 0;
+    padding-top:5px;
+    float:left;
+    width:80px;
+    background:#ededef;
+    font:bold 25px/65px Arial Black, Arial, Helvetica, sans-serif;
+    text-align:center;
+    color:#000;
+    text-shadow:#fff 0 1px 0; 
+    border-radius:3px;  
+    position:relative;
+    box-shadow:0 2px 2px #888;
+    box-shadow: -1px 2px 162px -9px rgb(59, 31, 222);
+    }
+  
+  /* Em element is also styled, it contains the month’s name. */
+  .calendar em{
+    display:block;
+    font:italic bold 15px/34px Arial, Helvetica, sans-serif;
+    color:#fdf2f2;
+    text-shadow:#f8f9fa 0px 0px 2px; 
+    background:rgba(236, 0, 24, 0.55);
+    border-bottom-right-radius:3px;
+    border-bottom-left-radius:3px;  
+    border-top:1px solid #00365a;
+    }
+  
+  /* Now I am styling the pseudo elements. Container’s pseudo elements (:before and :after) are used to create thos circles, "holes in te paper". */
+  .calendar:before, .calendar:after{
+    content:'';
+    float:left;
+    position:absolute;
+    top:5px;  
+    width:8px;
+    height:8px;
+    background:#111;
+    z-index:1;
+    border-radius:10px;
+    box-shadow:0 1px 1px #fff;
+    }
+  .calendar:before{left:11px;}  
+  .calendar:after{right:11px;}
+  
+  /*…and em’s pseudo elements are used to create the rings: */
+  .calendar em:before, .calendar em:after{
+    content:'';
+    float:left;
+    position:absolute;
+    top:-5px; 
+    width:4px;
+    height:14px;
+    background:#dadada;
+    background:-webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#aaa)); 
+    background:-moz-linear-gradient(top,  #f1f1f1,  #aaa); 
+    z-index:2;
+    border-radius:2px;
+    }
+  .calendar em:before{left:13px;} 
+  .calendar em:after{right:13px;} 
+  
+  
+  
+  
+  
+  
